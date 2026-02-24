@@ -18,11 +18,11 @@ disableShare: true
 
 ## Our Mission
 
-At **3act**, we believe that the secret to lasting change isn't willpower — it's **accountability**. We're building the tools and resources to help people show up every day, build unbreakable habits, and achieve their most ambitious goals through the power of community.
+At **[3act](https://3act.app)**, we believe that the secret to lasting change isn't willpower — it's **accountability**. We're building the tools and resources to help people show up every day, build unbreakable habits, and achieve their most ambitious goals through the power of community.
 
 ## What Is 3act?
 
-3act is a **free social habit tracker** available on the [App Store](https://apps.apple.com/app/id6756503513). It's designed around one powerful idea: you're far more likely to stick with your habits when someone else is watching.
+[3act](https://3act.app) is a **free social habit tracker** available on the [App Store](https://apps.apple.com/app/id6756503513). It's designed around one powerful idea: you're far more likely to stick with your habits when someone else is watching.
 
 With 3act, you can:
 
@@ -32,7 +32,7 @@ With 3act, you can:
 - **See each other's progress** in real-time
 - **Stay motivated** through social accountability
 
-The app is completely free — no hidden fees, no premium tiers, no ads. Just a tool built to help you become the person you want to be.
+The app is completely free — no hidden fees, no premium tiers, no ads. Just a tool built to help you become the person you want to be. Learn more at [3act.app](https://3act.app).
 
 ## About This Blog
 
@@ -53,12 +53,13 @@ We cover topics like:
 
 **Honest.** We're transparent about what works, what doesn't, and where 3act fits into the picture. We'll never mislead you.
 
-**Community-first.** We believe in the power of people helping people. That's why 3act is free, and that's why we share our knowledge openly on this blog.
+**Community-first.** We believe in the power of people helping people. That's why [3act](https://3act.app) is free, and that's why we share our knowledge openly on this blog.
 
 ## Get in Touch
 
 We'd love to hear from you. Whether you have a question, a suggestion for a blog topic, or just want to say hello:
 
+- **Website:** [3act.app](https://3act.app)
 - **Instagram:** [@3actapp](https://instagram.com/3actapp)
 - **TikTok:** [@3actapp](https://tiktok.com/@3actapp)
 - **Twitter/X:** [@3actapp](https://twitter.com/3actapp)

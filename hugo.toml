@@ -123,6 +123,12 @@ name = "Search"
 url = "/search/"
 weight = 40
 
+[[menu.main]]
+identifier = "nav-3act"
+name = "3act.app"
+url = "https://3act.app"
+weight = 50
+
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
