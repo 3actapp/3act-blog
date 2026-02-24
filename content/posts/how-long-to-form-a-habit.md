@@ -1,11 +1,15 @@
 ---
 title: "How Long Does It Really Take to Form a Habit? (The 21-Day Myth Debunked)"
 description: "Forget the 21-day myth. A 2009 study reveals it takes 66 days on average to form a habit. Learn the science and how 3act helps you stay consistent."
-date: 2026-02-24
+date: 2026-02-20
 author: "3act Team"
 categories: ["Habit Formation"]
 tags: ["habit formation", "behavior change", "psychology", "self-improvement", "consistency"]
 slug: "how-long-to-form-a-habit"
+cover:
+  image: "/images/posts/form-a-habit-gen.jpg"
+  alt: "Featured image"
+  relative: false
 ---
 
 You’ve heard it a thousand times. It’s one of the most pervasive, quoted, and clung-to pieces of self-help wisdom: “It takes 21 days to form a new habit.”

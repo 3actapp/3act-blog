@@ -6,6 +6,10 @@ author: "3act Team"
 categories: ["Accountability"]
 tags: ["accountability partner app", "habit tracker", "productivity", "goal setting", "social habit tracker", "accountability crew"]
 slug: "best-accountability-partner-apps"
+cover:
+  image: "/images/posts/accountability-apps-gen.jpg"
+  alt: "Featured image"
+  relative: false
 ---
 
 The desire for self-improvement is a universal human trait. We all have goals we want to achieve, habits we want to build, and a better version of ourselves we aspire to become. Yet, the path to achieving those goals is often paved with procrastination, inconsistency, and the silent fading of motivation. You start strong, full of energy and determination, but a few weeks in, the initial spark dwindles, and you find yourself back at square one. If this sounds familiar, you're not alone. The missing ingredient isn't more willpower or a better plan; it's **accountability**.

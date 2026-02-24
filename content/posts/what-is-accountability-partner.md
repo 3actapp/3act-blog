@@ -1,11 +1,15 @@
 ---
 title: "What Is an Accountability Partner? (And Why You Need One Today)"
 description: "Discover what an accountability partner is and why you need one. Find the perfect partner or use the 3act app to achieve your goals. Download for free!"
-date: 2026-02-24
+date: 2026-02-06
 author: "3act Team"
 categories: ["Accountability"]
 tags: ["accountability", "habits", "productivity", "goals"]
 slug: "what-is-an-accountability-partner"
+cover:
+  image: "/images/posts/what-is-accountability-gen.jpg"
+  alt: "Featured image"
+  relative: false
 ---
 
 

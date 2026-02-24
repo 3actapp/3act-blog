@@ -1,11 +1,15 @@
 ---
 title: "The Science of Social Accountability: Why Being Watched Changes Everything"
 description: "Explore the science of social accountability, from the Hawthorne Effect to commitment devices. Learn how 3act uses these principles to build habits."
-date: 2026-02-24
+date: 2026-02-08
 author: "3act Team"
 categories: ["Accountability", "Science"]
 tags: ["social accountability", "productivity", "habits", "psychology", "commitment devices"]
 slug: "the-science-of-social-accountability"
+cover:
+  image: "/images/posts/science-accountability-gen.jpg"
+  alt: "Featured image"
+  relative: false
 ---
 
 You set the goal. You bought the new running shoes, the fancy journal, the online course. You felt a surge of motivation, a vision of the new you—fitter, smarter, more disciplined. For three days, you were unstoppable. On day four, you were tired. On day five, you made an excuse. By day ten, the new shoes were gathering dust, a monument to another abandoned ambition.

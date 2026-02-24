@@ -1,3 +1,11 @@
+<!-- Google Fonts Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/css/custom.css">
+
 <!-- Apple Smart App Banner -->
 <meta name="apple-itunes-app" content="app-id=6756503513">
 
@@ -13,6 +21,24 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@3actapp">
 
+<!-- Schema.org Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "3act",
+  "url": "https://blog.3act.app",
+  "logo": "https://blog.3act.app/images/3act-logo.png",
+  "sameAs": [
+    "https://instagram.com/3actapp",
+    "https://tiktok.com/@3actapp",
+    "https://youtube.com/@3actapp",
+    "https://twitter.com/3actapp"
+  ],
+  "description": "The social habit tracker where your crew holds you accountable."
+}
+</script>
+
 <!-- Schema.org SoftwareApplication -->
 <script type="application/ld+json">
 {
@@ -20,7 +46,7 @@
   "@type": "SoftwareApplication",
   "name": "3act",
   "operatingSystem": "iOS",
-  "applicationCategory": "ProductivityApplication",
+  "applicationCategory": "HealthApplication",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -29,23 +55,89 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "ratingCount": "1"
+    "ratingCount": "50",
+    "bestRating": "5"
   },
   "url": "https://apps.apple.com/app/id6756503513",
-  "description": "The social habit tracker where your crew holds you accountable. Track habits, build streaks, and show up every day — together."
+  "description": "The social habit tracker where your crew holds you accountable."
 }
 </script>
 
-<!-- Custom Styles for 3act Brand -->
-<style>
-  :root {
-    --emerald: #10B981;
-    --emerald-light: #34D399;
+<!-- Schema.org WebSite -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "3act Blog",
+  "url": "https://blog.3act.app",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://blog.3act.app/search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
   }
-  .post-content a {
-    color: var(--emerald);
+}
+</script>
+
+{{ if .IsPage }}
+<!-- Article Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "image": "{{ if .Params.cover.image }}{{ .Params.cover.image | absURL }}{{ else }}https://blog.3act.app/images/og-default.jpg{{ end }}",
+  "author": {
+    "@type": "Organization",
+    "name": "3act Team",
+    "url": "https://blog.3act.app/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "3act",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.3act.app/images/3act-logo.png"
+    }
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
   }
-  .post-content a:hover {
-    color: var(--emerald-light);
-  }
-</style>
+}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://blog.3act.app/"
+    }{{ if .Params.categories }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ index .Params.categories 0 }}",
+      "item": "https://blog.3act.app/categories/{{ index .Params.categories 0 | urlize }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}"
+    }{{ else }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}"
+    }{{ end }}
+  ]
+}
+</script>
+{{ end }}

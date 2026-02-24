@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://blog.3act.app/sitemap.xml
-
-# 3act Blog - Accountability, Habits & Productivity
-# https://blog.3act.app

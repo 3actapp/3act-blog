@@ -1,11 +1,15 @@
 ---
 title: "How to Build a New Habit: The Definitive Step-by-Step Guide"
 description: "Learn to build habits that stick with our guide to habit formation, frameworks, and accountability. Download the FREE 3act app to start today!"
-date: 2026-02-24
+date: 2026-02-18
 author: "3act Team"
 categories: ["Habit Formation"]
 tags: ["how to build a habit", "habit formation", "productivity", "self-improvement", "accountability", "habit tracker"]
 slug: "how-to-build-a-new-habit-the-definitive-guide"
+cover:
+  image: "/images/posts/build-new-habit-gen.jpg"
+  alt: "Featured image"
+  relative: false
 ---
 
 You’ve felt it before. A surge of motivation, a clear vision of a better self. You declare, “Starting tomorrow, I will exercise every day.” Or maybe it’s “I’ll finally learn that language,” or “I’m going to wake up at 5 AM.” For a few days, you’re unstoppable. Then, life happens. A late night at work, a rainy morning, a simple lack of energy—and the new habit crumbles.

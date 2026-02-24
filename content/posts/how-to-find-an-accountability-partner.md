@@ -1,11 +1,15 @@
 ---
 title: "How to Find an Accountability Partner: 7 Proven Methods"
 description: "Struggling to stay consistent? Learn how to find an accountability partner with 7 proven methods and see why the 3act app makes it easy. Download for free!"
-date: 2026-02-24
+date: 2026-02-16
 author: "3act Team"
 categories: ["Accountability"]
 tags: ["accountability", "goal setting", "productivity", "habits", "motivation", "social accountability"]
 slug: "how-to-find-an-accountability-partner"
+cover:
+  image: "/images/posts/find-accountability-gen.jpg"
+  alt: "Featured image"
+  relative: false
 ---
 
 You set a goal. You’re motivated, energized, and ready to conquer it. For a few days, you’re unstoppable. Then, life happens. Motivation wanes. The initial fire dwindles to a flicker. Soon, the goal is a distant memory, another casualty of good intentions. Why does this pattern repeat itself? The missing ingredient isn’t more willpower or a better plan. It’s accountability.

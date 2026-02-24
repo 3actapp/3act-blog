@@ -1,11 +1,15 @@
 ---
 title: "How to Track Habits with Friends: The Complete Guide"
 description: "Tired of quitting on your goals? Learn how to track habits with friends and discover the best free tools to stay consistent. Download 3act today!"
-date: 2026-02-24
+date: 2026-02-12
 author: "3act Team"
 categories: ["Habit Formation"]
 tags: ["habit tracking", "accountability", "social habits", "productivity", "ios", "free app"]
 slug: "how-to-track-habits-with-friends"
+cover:
+  image: "/images/posts/track-habits-friends-gen.jpg"
+  alt: "Featured image"
+  relative: false
 ---
 
 You’ve been here before. A surge of motivation, a brand new journal, a freshly downloaded app. You declare this is the month you’ll finally start meditating daily, hitting the gym consistently, or giving up sugar. Day one is great. Day three is okay. By day seven, the journal is gathering dust, and the app icon goes unopened. The cycle of starting and stopping feels inevitable, a frustrating loop of ambition and failure.

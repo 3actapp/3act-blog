@@ -1,11 +1,15 @@
 ---
 title: "How to Stop Procrastinating: The Definitive Guide"
 description: "Tired of delaying your goals? Learn to stop procrastinating with our guide and see how the FREE 3act app can help you build habits that stick. Download today!"
-date: 2026-02-24
+date: 2026-02-14
 author: "3act Team"
 categories: ["Productivity"]
 tags: ["procrastination", "productivity", "habits", "accountability"]
 slug: "how-to-stop-procrastinating"
+cover:
+  image: "/images/posts/stop-procrastinating-gen.jpg"
+  alt: "Featured image"
+  relative: false
 ---
 
 It’s the universal human condition. That nagging feeling of knowing you *should* be doing something important, yet you find yourself doing anything but. You have a deadline looming, a goal you’re passionate about, a change you desperately want to make. But instead of taking action, you’re scrolling through social media, organizing your spice rack, or suddenly developing a keen interest in 18th-century pottery. This is procrastination, and it is more than just a bad habit; it's a thief of time, a drain on potential, and a significant source of stress and anxiety.

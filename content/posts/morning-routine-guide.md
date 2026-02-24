@@ -1,11 +1,15 @@
 ---
 title: "How to Build a Morning Routine You Will Actually Stick To"
 description: "Build a morning routine you'll actually stick to. Learn the science of habit formation and how the 3act app can help you succeed. Download for free!"
-date: 2026-02-24
+date: 2026-02-10
 author: "3act Team"
 categories: ["Routines", "Productivity", "Habit Tracking"]
 tags: ["morning routine", "circadian rhythm", "cortisol awakening response", "decision fatigue", "habit building", "accountability", "social habit tracker", "free habit tracker"]
 slug: "how-to-build-a-morning-routine-you-will-actually-stick-to"
+cover:
+  image: "/images/posts/morning-routine-gen.jpg"
+  alt: "Featured image"
+  relative: false
 ---
 
 We all know the feeling: the alarm blares, you hit snooze, and the day begins with a scramble. The dream of a productive, peaceful morning routine often feels just that—a dream. But what if the secret to a sustainable morning isn't about willpower, but about understanding your biology and leveraging powerful psychological principles? This guide will walk you through building a morning routine that you'll not only stick to, but that will genuinely transform your days.

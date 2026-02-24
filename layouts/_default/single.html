@@ -1,0 +1,125 @@
+{{- define "main" }}
+<!-- Reading Progress Bar -->
+<div class="reading-progress" id="reading-progress"></div>
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title entry-hint-parent">
+      {{ .Title }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+      {{- partial "post_meta.html" . -}}
+    </div>
+    {{- end }}
+  </header>
+
+  {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
+  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+
+  {{- if (.Param "ShowToc") }}
+  {{- partial "toc.html" . }}
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <!-- Inline CTA -->
+  <div class="inline-cta">
+    <h4>Build Habits That Stick with 3act</h4>
+    <p>Track your habits, share progress with friends, and never fall off again. The social habit tracker that actually works.</p>
+    <a href="https://apps.apple.com/app/id6756503513" class="btn-primary" target="_blank" rel="noopener" style="font-size:0.9rem;padding:12px 28px;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Download Free on App Store
+    </a>
+  </div>
+
+  <!-- Author Bio -->
+  <div class="author-bio">
+    <div class="author-avatar">3A</div>
+    <div class="author-info">
+      <h4>Written by the 3act Team</h4>
+      <p>We're building the social habit tracker that helps you show up every day. Our team researches and writes about accountability, habit formation, and the science of behaviour change. <a href="/about/" style="color:var(--coral);">Learn more about 3act →</a></p>
+    </div>
+  </div>
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+  </footer>
+
+  <!-- Related Posts -->
+  {{- $related := site.RegularPages.Related . | first 3 }}
+  {{- if $related }}
+  <div class="related-posts">
+    <h3>You Might Also Like</h3>
+    <div class="related-grid">
+      {{- range $related }}
+      <a href="{{ .Permalink }}" class="related-card">
+        {{- if .Params.cover.image }}
+        <img src="{{ .Params.cover.image }}" alt="{{ .Title }}" loading="lazy">
+        {{- else }}
+        <img src="/images/og-default.jpg" alt="{{ .Title }}" loading="lazy">
+        {{- end }}
+        <div class="related-body">
+          <h4>{{ .Title }}</h4>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+</article>
+
+<!-- Newsletter at bottom of posts -->
+<section class="newsletter-section">
+  <div class="section-header" style="margin-bottom:28px;">
+    <span class="section-label">Newsletter</span>
+    <h2>Get Weekly Habit Tips</h2>
+    <p>Science-backed habit strategies and accountability tips delivered to your inbox.</p>
+  </div>
+  <form class="newsletter-form" action="https://blog.3act.app/" method="get" onsubmit="alert('Thanks for your interest! Newsletter coming soon.'); return false;">
+    <input type="email" placeholder="Enter your email address" required>
+    <button type="submit">Subscribe</button>
+  </form>
+  <p style="font-size:0.75rem;color:var(--gray-500);margin-top:12px;">No spam, ever. Unsubscribe anytime.</p>
+</section>
+
+<!-- Reading Progress Script -->
+<script>
+(function() {
+  var progressBar = document.getElementById('reading-progress');
+  if (!progressBar) return;
+  window.addEventListener('scroll', function() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    progressBar.style.width = scrolled + '%';
+  });
+})();
+</script>
+
+{{- end }}{{/* end main */}}
