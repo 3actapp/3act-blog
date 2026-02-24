@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}
+
+# 3act Blog - Accountability, Habits & Productivity
+# https://blog.3act.app

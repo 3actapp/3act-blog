@@ -1,0 +1,139 @@
+baseURL = "https://blog.3act.app/"
+languageCode = "en-us"
+title = "3act Blog — Accountability, Habits & Productivity"
+theme = "PaperMod"
+[pagination]
+pagerSize = 10
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "3act Blog"
+description = "Science-backed strategies for accountability, habit building, and productivity. Learn how to show up every day and achieve your goals with social accountability."
+keywords = ["accountability", "habit tracker", "productivity", "habits", "goal setting", "self improvement", "accountability partner", "3act"]
+author = "3act Team"
+images = ["/images/og-default.png"]
+DateFormat = "January 2, 2006"
+defaultTheme = "dark"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = true
+
+[params.assets]
+favicon = "/favicon.ico"
+favicon16x16 = "/favicon-16x16.png"
+favicon32x32 = "/favicon-32x32.png"
+apple_touch_icon = "/apple-touch-icon.png"
+
+[params.label]
+text = "3act Blog"
+icon = "/images/3act-logo.png"
+iconHeight = 35
+
+[params.homeInfoParams]
+Title = "Show Up Every Day"
+Content = """
+Welcome to the 3act blog — your guide to building unbreakable habits through the power of social accountability. We share science-backed strategies for accountability, habit formation, productivity, and personal growth.
+
+**3act** is the social habit tracker where your crew holds you accountable. [Download free on the App Store →](https://apps.apple.com/app/id6756503513)
+"""
+
+[[params.socialIcons]]
+name = "instagram"
+url = "https://instagram.com/3actapp"
+
+[[params.socialIcons]]
+name = "tiktok"
+url = "https://tiktok.com/@3actapp"
+
+[[params.socialIcons]]
+name = "youtube"
+url = "https://youtube.com/@3actapp"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/3actapp"
+
+[params.analytics.google]
+SiteVerificationTag = ""
+
+[params.analytics.yandex]
+SiteVerificationTag = ""
+
+[params.analytics.bing]
+SiteVerificationTag = ""
+
+[params.analytics.naver]
+SiteVerificationTag = ""
+
+[params.cover]
+hidden = false
+hiddenInList = false
+hiddenInSingle = false
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+identifier = "cat-accountability"
+name = "Accountability"
+url = "/categories/accountability/"
+weight = 10
+
+[[menu.main]]
+identifier = "cat-habits"
+name = "Habits"
+url = "/categories/habit-formation/"
+weight = 20
+
+[[menu.main]]
+identifier = "cat-productivity"
+name = "Productivity"
+url = "/categories/productivity/"
+weight = 30
+
+[[menu.main]]
+identifier = "nav-search"
+name = "Search"
+url = "/search/"
+weight = 40
+
+[[menu.main]]
+identifier = "nav-download"
+name = "Download 3act"
+url = "https://apps.apple.com/app/id6756503513"
+weight = 50
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+changefreq = "weekly"
+filename = "sitemap.xml"
+priority = 0.5
