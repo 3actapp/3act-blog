@@ -6,7 +6,7 @@ theme = "PaperMod"
 [pagination]
 pagerSize = 12
 
-enableRobotsTXT = true
+enableRobotsTXT = false  # Using static/robots.txt instead
 buildDrafts = false
 buildFuture = false
 buildExpired = false
@@ -62,6 +62,8 @@ Content = """
 Science-backed strategies for accountability, habit formation, and personal growth. Your guide to showing up every day.
 """
 
+[params.social]
+  twitter = "3actapp"
 [[params.socialIcons]]
 name = "instagram"
 url = "https://instagram.com/3actapp"
